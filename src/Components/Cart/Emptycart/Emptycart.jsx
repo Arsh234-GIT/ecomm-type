@@ -1,5 +1,5 @@
 import React from "react";
-import "./EmptyCart.css";
+import "./EmptyCart.css"; // Update the file name here
 import { useNavigate } from "react-router-dom";
 
 const EmptyCart = () => {

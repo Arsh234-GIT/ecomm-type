@@ -16,7 +16,7 @@ const SingleProduct = ({ addToCart }) => {
   }
 
   const handleQuantityChange = (change) => {
-    const newQuantity = Math.max(1, quantity + change); // Ensure quantity is at least 1
+    const newQuantity = Math.max(1, quantity + change); 
     setQuantity(newQuantity);
   };
 
@@ -48,7 +48,7 @@ const SingleProduct = ({ addToCart }) => {
         </div>
         <button
           className="add-to-cart-button"
-          onClick={() => addToCart(product, quantity)} // Pass the selected quantity
+          onClick={() => addToCart(product, quantity)} 
         >
           <FaCartPlus size={20} />
           ADD TO CART
