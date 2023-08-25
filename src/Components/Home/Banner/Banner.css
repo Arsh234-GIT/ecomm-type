@@ -1,0 +1,110 @@
+.landing-section {
+    background-image: url("./src/assets/homeimage/keyboard-cover.png");
+    height: calc(100vh - 70px); 
+    width: 99vw;
+    position: relative;
+    left: 0;
+    right: 0;
+     
+    background-size: cover;
+    background-position: center calc();
+    background-repeat: no-repeat;
+    overflow: hidden; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    
+  }
+  .landing-section::before {
+    content: "";
+    position:absolute ;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); 
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 1;
+    max-width: 600px; 
+    text-align: center; 
+  cursor: pointer;
+    padding: 20px;
+  }
+  
+  .content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .content p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+  }
+  
+  
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .buttons a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 10px;
+    border-radius: 4px;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 0 5px; /* Add some margin between the buttons */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+  
+  
+  /* Media query for smaller screens (mobile and tablets) */
+  /* Media query for smaller screens (mobile and tablets) */
+  @media (max-width: 768px) {
+    
+    .landing-section {
+      width: 100vw;
+      height: 50vh; /* Adjust the height as needed */
+      background-size: cover; /* Maintain aspect ratio and cover full area */
+      background-position: top; /* Align background image to top */
+    }
+    
+    .landing-section::before {
+      background-color: rgba(0, 0, 0, 0.8); /* Darken the overlay color */
+    }
+    
+    .content {
+      padding: 10px;
+    }
+    
+    .content h2 {
+      font-size: 1.5rem;
+    }
+    
+    .content p {
+      font-size: 1rem;
+    }
+    
+    .buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .buttons a {
+      margin: 5px 0;
+      padding: 5px 8px;
+      font-size: 0.9rem;
+    }
+  }

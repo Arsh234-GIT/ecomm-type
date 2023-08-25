@@ -1,0 +1,143 @@
+/* Navbar.css */
+
+.main-navbar {
+    background-color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    color: black;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+  }
+  
+  .nav-content {
+    display: flex;
+    justify-content: space-between; /* Evenly space left and right elements */
+    align-items: center; /* Vertically center items */
+    padding: 10px 20px; /* Add padding to the content */
+    
+  }
+  
+  .left {
+    
+    font-weight: bold;
+    font-size: 1.7rem; /* Adjust font size */
+    
+    
+  }
+  
+  .centre {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  
+  .centre li:hover {
+    color: rgb(86, 80, 80); /* Change the color when hovering */
+  }
+  
+  
+  .centre li {
+    margin-right: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .right {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s;
+    gap: 10px;
+  }
+  
+  
+  .search-item {
+    font-size: 1.3rem; 
+    margin-right: 10px;
+    transition: color 0.3s;
+  }
+  .search-item:hover {
+    color: rgb(86, 80, 80); /* Change the color when hovering */
+  }
+
+ 
+.cart-item-link {
+  color: black; 
+  text-decoration: none; 
+  transition: color 0.3s; 
+  font-size: 1.5rem;
+  margin-right: 10px;
+  
+}
+
+.cart-item-link {
+  position: relative;
+}
+
+.cart-item-count {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 4px;
+  font-size: 12px;
+}
+
+
+  
+
+.cart-item-link:hover {
+  color: rgb(86, 80, 80);
+} 
+
+ 
+  
+
+  
+  @media (max-width: 768px) {
+    
+    .nav-content {
+      flex-direction: row; /* Keep elements side by side on smaller screens */
+      justify-content: space-between; /* Distribute items evenly */
+      align-items: center; /* Vertically center items */
+      padding: 10px; /* Adjust padding for the content */
+    }
+  
+    .left {
+      font-size: 1.5rem; /* Adjust font size for left element on smaller screens */
+    }
+  
+    .centre {
+      display: none; /* Hide the center section on smaller screens */
+    }
+  
+    .right {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      transition: color 0.3s;
+      gap: 10px;
+    }
+  
+    .search-item,
+    .cart-item {
+      font-size: 1.3rem; /* Adjust font size for search and cart items */
+      margin-right: 5px; /* Reduce margin for search and cart items */
+    }
+    
+    /* Remove the white space between top and navbar */
+    .main-navbar {
+      margin-top: 0;
+    }
+  }
+  

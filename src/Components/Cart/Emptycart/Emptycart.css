@@ -1,0 +1,26 @@
+.empty-cart {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .empty-cart p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .continue-shopping {
+    text-align: center;
+  }
+  
+  .continue-shopping-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .continue-shopping-button:hover {
+    background-color: rgb(86, 80, 80);
+  }
+  
