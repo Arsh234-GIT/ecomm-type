@@ -1,5 +1,5 @@
 .landing-section {
-    background-image: url("./src/assets/homeimage/keyboard-cover.png");
+    background-image: url("./TypingTrove/src/assets/homeimage/keyboard-cover.png");
     height: calc(100vh - 70px); 
     width: 99vw;
     position: relative;
