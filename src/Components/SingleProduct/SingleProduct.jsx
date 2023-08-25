@@ -8,7 +8,8 @@ const SingleProduct = ({ addToCart }) => {
   const { productId } = useParams();
   const product = Data.find(item => item.id === parseInt(productId, 10));
 
-  const [quantity, setQuantity] = useState(1); // Initialize the quantity state
+  const [quantity, setQuantity] = useState(1); 
+  const [isHovered, setIsHovered] = useState(false);
 
   if (!product) {
     return <div>Product not found</div>;
@@ -24,7 +25,12 @@ const SingleProduct = ({ addToCart }) => {
       <div className="layout">
         <div className="single-product-page">
           <div className="left">
-            <img src={product.coverImg} alt={product.title} />
+          <img
+              src={isHovered ? product.hoverImg : product.coverImg}
+              alt={product.title}
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            />
           </div>
           <div className="right">
             <span className="name">{product.title}</span>

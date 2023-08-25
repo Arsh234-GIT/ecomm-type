@@ -365,3 +365,16 @@
     background-color: rgba(0, 0, 0, 0.1);
   }
   
+
+
+  .single-product-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+  
+  .single-product-container:hover {
+    transform: scale(1.05);
+  }
+  

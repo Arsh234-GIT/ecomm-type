@@ -5,6 +5,7 @@ import Home from "./Components/Home/Home";
 import SingleProduct from "./Components/SingleProduct/SingleProduct";
 import Cart from "./Components/Cart/Cart";
 import AppContext from "./Utils/Context";
+import Data from "./Data";
 import "./App.css";
 
 function App() {
@@ -40,7 +41,9 @@ function App() {
     setCartItems(updatedCart);
   };
 
+  const product = Data[0];
 
+ 
   return (
     <Router>
       <AppContext>
@@ -49,7 +52,11 @@ function App() {
           <Route path="/" element={<Home setShowCart={setShowCart} />} />
           <Route
             path="/products/:productId"
-            element={<SingleProduct addToCart={addToCart}  />}
+            element={<SingleProduct addToCart={addToCart}   title={product.title}
+            description={product.description}
+            price={product.price}
+            coverImg={product.coverImg}
+            hoverImg={product.hoverImg}  />}
           />
           <Route path="/cart" element={<Cart cartItems={cartItems}
            updateCartItemQuantity={updateCartItemQuantity}

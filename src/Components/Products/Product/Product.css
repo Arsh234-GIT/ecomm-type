@@ -35,6 +35,20 @@
     font-weight: bold;
   }
   
+
+  .product-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+
+
+
   /* Styles for smaller screens (e.g., mobile and tablets) */
 @media (max-width: 768px) {
     .Product-card {
@@ -43,8 +57,8 @@
       padding: 10px;
       object-fit: fill;
     }
-    
-    .thumbimage {
+    .thumbimage
+     {
       height: 200px; /* Adjust the height for smaller screens */
       object-fit: cover;
     }

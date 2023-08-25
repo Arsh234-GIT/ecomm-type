@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Product.css";
 
+const Product = ({ title, description, price, coverImg, hoverImg, onClick }) => {
+  const [isHovered, setIsHovered] = useState(false);
 
-
-
-const Product = ({ title, description, price, coverImg,onClick  }) => {
   return (
     <div className="Product-card" onClick={onClick}>
-      <img className="thumbimage" src={coverImg} alt=""/>
+      <img
+        className="thumbimage"
+        src={isHovered ? hoverImg : coverImg}
+        alt=""
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      />
       <span className="name">{title}</span>
       <span className="price">${price}</span>
     </div>
@@ -15,4 +20,3 @@ const Product = ({ title, description, price, coverImg,onClick  }) => {
 };
 
 export default Product;
-

@@ -22,6 +22,7 @@ const Products = () => {
             description={product.description}
             price={product.price}
             coverImg={product.coverImg}
+            hoverImg={product. hoverImg}
             onClick={() => handleProductClick(product.id)}
           />
         ))}
