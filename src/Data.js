@@ -36,7 +36,7 @@ const Data = [
         title: " PRE-ORDER ROSEWATER KEYCAPS",
         description: " Indulge in the beauty of nature with our exquisite Rosewater Keycaps, available now for pre-order. Take a stroll through a tranquil garden as soft pink tones transport you to the idyllic embrace of a warm spring day. Crafted with meticulous attention to detail, these keycaps seamlessly blend elegance and functionality, promising a delightful typing experience that's both visually captivating and comfortable.Elevate your keyboard aesthetics with the gentle allure of Rosewater. Compatible with a wide range of mechanical keyboards, the Rosewater Keycaps are designed for effortless installation, making it easy for you to personalize your workspace. Whether you're a creative enthusiast, a dedicated writer, or a tech-savvy individual, these keycaps offer a unique opportunity to infuse your keyboard with the enchanting essence of blooming gardens. ",
         price: 8500,
-        coverImg: "/TypingTrove/TypingTrove/keyboards/keyboard4.webp",
+        coverImg: "/TypingTrove/keyboards/keyboard4.webp",
         hoverImg: "/TypingTrove/keycaps/key4.webp",
 
     },
